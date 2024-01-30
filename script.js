@@ -84,7 +84,7 @@ textarea.addEventListener('input', function(event) {
     // Verificar si la tecla presionada está permitida
     if (!permitidos.test(key)) {
         // Si la tecla no está permitida, prevenir la acción por defecto (no agregar el carácter al textarea)
-        textarea.value = texto.replace(/[^\w\s\-.]/gi, '');
+        textarea.value = key.replace(/[^\w\s\-.]/gi, '');
     }
 });
 
