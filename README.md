@@ -1,7 +1,7 @@
 # encriptador-texto-one
 🔓Challenge ONE Sprint 01: Construyendo un encriptador de texto con Javascript: Encriptando tus mensajes de una manera rapida e eficiente!🔒
 
-Bienvenido al 🔐Encriptador🔐 de Texto ONE 💻.
+Bienvenido al <b>Encriptador<b> de Texto ONE 💻.
 
 Este proyecto te ofrece una manera sencilla de encriptar tus mensajes y datos de manera rápida y segura. 
 
