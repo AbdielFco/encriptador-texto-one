@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -34,15 +33,13 @@ main {
     justify-content: center;
 }
 .column {
-    padding: 0 50px; /* Añadimos un padding a las columnas */
+    padding: 0 10px; /* Reducido el padding */
 }
 
 textarea {
-    
-    border-radius: 6px; /* Define el radio de borde */
-    /* Otros estilos opcionales */
-    border: 4px dashed #4CAF50; /* Agrega un borde */
-    width: 500px;
+    border-radius: 6px;
+    border: 4px dashed #4CAF50;
+    width: 95%; /* Ancho del textarea al 100% */
     height: 300px;
     margin-bottom: 10px;
     resize: none;
@@ -52,114 +49,92 @@ textarea {
 
 .buttons-row {
     display: flex;
-    justify-content: space-between; /* Espacio entre los botones */
+    justify-content: center; /* Centrar los botones */
     align-items: center;
-    margin-top: 20px; /* Añadimos un margen entre los textareas y los botones */
-}
-.button-column {
-    padding: 0 0px; /* Añadimos un padding a las columnas de botones */
+    margin-top: 20px;
 }
 button {
-    border-radius: 6px; /* Define el radio de borde */
-    /* Otros estilos opcionales */
-    border: 3px solid #4CAF50; /* Agrega un borde */
+    border-radius: 6px;
+    border: 3px solid #4CAF50;
     padding: 10px 20px;
     background-color: #e9e9e9;
     color: #4CAF50;
     cursor: pointer;
     font-size: 17px;
-    margin-right: -5px; /* Ajustamos el margen derecho para superponer ligeramente el botón */
+    margin: 0 5px; /* Reducido el margen horizontal */
     width: 150px;
-    height: 45px;
 }
 button:hover {
     background-color: #8BC34A;
 }
-.right-buttons button {
-    margin-right: 50px; /* Ajusta el margen derecho del botón de la derecha */
-}
-.left-buttons button {
-    margin-left: 50px; /* Ajusta el margen derecho del botón de la derecha */
-}
 
 footer {
+    position: relative;
+    width: 100%;
     background-color: #388E3C;
     color: white;
     text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Ajustar el margen superior para evitar que se superponga con el contenido */
 }
-
-
-
-
-
-
 
 /* Ajustes para pantallas pequeñas, como tablets */
 @media only screen and (max-width: 768px) {
-    /* Ajustes para los textareas */
+    .column {
+        padding: 3 5px; /* Reducido el padding */
+    }
+    footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+}
 
-    textarea {
-        width: 100%;
-        margin-bottom: 10px;
-        font-size: 16px;
-    }
-
-    button {
-        font-size: 14px;
-    }
-    .buttons-row {
-        flex-direction:unset;
-    }
-    .left-buttons {
-        margin-right: 44px;
-    }
-    .button-column {
-        padding: 0px 0;
-        text-align: center;
-    }
-
+@media only screen and (max-width: 491px) {
     .columns {
         flex-direction: column;
     }
+    .column {
+        padding: 0;
+        width: 100%;
+    }
+    #left-column textarea,
+    #right-column textarea {
+        width: 95%;
+        width: 350px;
+        max-width: none; /* Eliminar el ancho máximo */
+    }
+
+    .buttons-row {
+        flex-direction: column; /* Cambiar la dirección de los botones a columna */
+    }
+
+    button {
+        width: 100%; /* Ancho completo para los botones */
+        margin: 5px 0; /* Añadir espacio entre los botones */
+    }
 }
+
 
 /* Ajustes para pantallas aún más pequeñas, como dispositivos móviles */
 @media only screen and (max-width: 375px) {
-    /* Ajustes adicionales para textareas y botones */
-    textarea {
-        width: 95%;
-        font-size: 16px;
+    .column {
+        padding: 0; /* Eliminado el padding */
     }
 
-    button {
-        margin-top: 5px;
-        font-size: 14px;
-
-    }
-
+    #left-column textarea,
     #right-column textarea {
-        width: 95%;
+        width: 95%; /* Hacer los textareas un poco más anchos */
     }
 
     .buttons-row {
-        flex-direction:column;
-    }
-    .left-buttons {
-        margin-right: 50px;
-    }
-    .right-buttons {
-        margin-left: 55px;
-    }
-    .button-column {
-        padding: 0px 0;
-        text-align: center;
+        flex-direction: column; /* Cambiar la dirección de los botones a columna */
     }
 
-    .columns {
-        flex-direction: column;
+    button {
+        width: 100%; /* Ancho completo para los botones */
+        margin: 5px 0; /* Añadir espacio entre los botones */
     }
 }
-
-
-
 
