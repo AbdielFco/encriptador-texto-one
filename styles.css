@@ -41,7 +41,7 @@ textarea {
     
     border-radius: 6px; /* Define el radio de borde */
     /* Otros estilos opcionales */
-    border: 4px solid #4CAF50; /* Agrega un borde */
+    border: 4px dashed #4CAF50; /* Agrega un borde */
     width: 500px;
     height: 300px;
     margin-bottom: 10px;
