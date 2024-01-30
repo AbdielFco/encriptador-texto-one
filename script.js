@@ -65,16 +65,6 @@ function copiar() {
 
 // Obtener el elemento textarea
 let textarea = document.getElementById('input');
-// Agregar un listener para el evento input (cuando el usuario escribe algo) lo vuelva minusculas
-textarea.addEventListener('input', function() {
-
-    // Obtener el texto actual del textarea
-    let texto = textarea.value;
-    // Convertir todo el texto a minúsculas
-    texto = texto.toLowerCase();
-    // Actualizar el valor del textarea con el texto en minúsculas
-    textarea.value = texto;
-});
 // Agregar un event listener para el evento keydown
 textarea.addEventListener('input', function(event) {
     // Obtener el código de la tecla presionada
@@ -87,4 +77,15 @@ textarea.addEventListener('input', function(event) {
         textarea.value = key.replace(/[^\w\s\-.]/gi, '');
     }
 });
+// Agregar un listener para el evento input (cuando el usuario escribe algo) lo vuelva minusculas
+textarea.addEventListener('input', function() {
+
+    // Obtener el texto actual del textarea
+    let texto = textarea.value;
+    // Convertir todo el texto a minúsculas
+    texto = texto.toLowerCase();
+    // Actualizar el valor del textarea con el texto en minúsculas
+    textarea.value = texto;
+});
+
 
