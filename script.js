@@ -78,14 +78,13 @@ textarea.addEventListener('input', function() {
 // Agregar un event listener para el evento keydown
 textarea.addEventListener('input', function(event) {
     // Obtener el código de la tecla presionada
-    let key = event.key;
+    let key = textarea.value;
     // Permitir caracteres alfabéticos, numéricos y algunos caracteres especiales como el espacio, el guión y el punto
     let permitidos = /^[a-zA-Z0-9\s\-.]*$/;
     // Verificar si la tecla presionada está permitida
     if (!permitidos.test(key)) {
         // Si la tecla no está permitida, prevenir la acción por defecto (no agregar el carácter al textarea)
         inputElement.value = texto.replace(/[^\w\s\-.]/gi, '');
-        event.preventDefault();
     }
 });
 
