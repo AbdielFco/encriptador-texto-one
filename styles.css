@@ -79,8 +79,37 @@ footer {
     margin-top: 20px; /* Ajustar el margen superior para evitar que se superponga con el contenido */
 }
 
+
+
+
+/* Ajustar tamaño inputs */
+@media only screen and (max-width: 100000px) {
+
+    #left-column ,
+    #right-column  {
+        width: 400px;
+    }
+}
+/* Ajustar tamaño inputs */
+@media only screen and (max-width: 904px) {
+
+    #left-column ,
+    #right-column  {
+        width: 300px;
+    }
+}
+
+
 /* Ajustes para pantallas pequeñas, como tablets */
 @media only screen and (max-width: 768px) {
+
+
+    #left-column ,
+    #right-column  {
+        width: 232.017px;
+    }
+
+
     .column {
         padding: 3 5px; /* Reducido el padding */
     }
@@ -92,6 +121,13 @@ footer {
 }
 
 @media only screen and (max-width: 491px) {
+
+
+    #left-column ,
+    #right-column  {
+        width: 232.017px;
+    }
+
     .columns {
         flex-direction: column;
     }
@@ -99,12 +135,7 @@ footer {
         padding: 0;
         width: 100%;
     }
-    #left-column textarea,
-    #right-column textarea {
-        width: 95%;
-        width: 350px;
-        max-width: none; /* Eliminar el ancho máximo */
-    }
+
 
     .buttons-row {
         flex-direction: column; /* Cambiar la dirección de los botones a columna */
@@ -137,4 +168,5 @@ footer {
         margin: 5px 0; /* Añadir espacio entre los botones */
     }
 }
+
 
