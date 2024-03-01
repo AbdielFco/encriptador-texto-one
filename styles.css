@@ -1,3 +1,17 @@
+.aviso-container p {
+  display: inline-block;
+  margin-left: 0px;
+  margin-botton: 0px;	
+  max-width: 100%; /* El párrafo nunca será más ancho que el ancho del contenedor */
+  width: 90%; /* Ancho del párrafo en relación con su contenedor */
+	
+}
+
+.imagen {
+  filter: hue-rotate(30deg);
+  
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -46,6 +60,9 @@ textarea {
     outline: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+textarea:hover {
+   transform: translateY(-3px); /* Levantar el botón 5px hacia arriba */
+}
 
 .buttons-row {
     display: flex;
@@ -64,9 +81,14 @@ button {
     margin: 0 5px; /* Reducido el margen horizontal */
     width: 150px;
 }
-button:hover {
-    background-color: #8BC34A;
+#btncifrar {
+    background-color: #b5dfb7;
 }
+button:hover, #btncifrar:hover {
+    background-color: #8BC34A;
+    transform: translateY(-2px);
+}
+
 
 footer {
     position: relative;
