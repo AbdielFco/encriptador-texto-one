@@ -22,8 +22,12 @@
                     <textarea id="output" placeholder="Ningún mensaje fue encontrado" style="font-size: 20px;" disabled></textarea>
                 </div>
             </div>
+	    <div class="aviso-container">
+    		<img class="imagen" src="img/warn.png" alt="warn button" width="25" height="20">
+    		<p>Solo letras minúsculas y sin acentos.</p>
+  	    </div>
             <div class="buttons-row">
-                <button onclick="cifrar()">Cifrar</button>
+                <button id="btncifrar" onclick="cifrar()">Cifrar</button>
                 <button onclick="descifrar()">Descifrar</button>
                 <button onclick="copiar()">Copiar</button>
             </div>
