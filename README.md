@@ -30,7 +30,7 @@ Requirements:
     It must be possible to convert a word to its encrypted version and also decrypt an encrypted word back to its original version.
 
 <div align="center">
-    <img src="./img/example.png" width="100px" height="100px">
+    <img src="./img/example.png" width="300px" height="500px">
 </div>   
   
 Enjoy! 😜
