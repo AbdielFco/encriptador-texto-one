@@ -1,28 +1,32 @@
-# encriptador-texto-one
-🔓Challenge ONE Sprint 01: Construyendo un encriptador de texto con Javascript: Encriptando tus mensajes de una manera rapida e eficiente!🔒
+# Text-encryptor-one
+🔓 Challenge ONE Sprint 01: Building a text encryptor with JavaScript – Encrypting your messages quickly and efficiently! 🔒
 
-Bienvenido al **Encriptador** de Texto 💻.
+<div align="center">
+    <img src="./img/insignia_encriptador.png">
+</div>
 
-Este proyecto te ofrece una manera sencilla de encriptar tus mensajes y datos de manera rápida y segura. 
+Welcome to the Text Encryptor 💻.
 
-Características destacadas:
+This project provides a simple way to encrypt your messages and data quickly and securely.
 
-    Interfaz simple: Nuestra interfaz fácil de usar te permite encriptar texto con solo unos pocos clics.
-    Código abierto: Este proyecto es completamente abierto a contribuciones.
+Key Features:
 
-Reglas: 
-  Las "llaves" de encriptación que son utilizadas son las siguientes:
+    Simple Interface: Our user-friendly interface allows you to encrypt text with just a few clicks.
+    Open Source: This project is completely open to contributions.
 
-    *La letra "e" es convertida para "enter"
-    *La letra "i" es convertida para "imes"
-    *La letra "a" es convertida para "ai"
-    *La letra "o" es convertida para "ober"
-    *La letra "u" es convertida para "ufat".
+Rules:
+The encryption "keys" used are as follows:
+
+    The letter "e" is converted to "enter"
+    The letter "i" is converted to "imes"
+    The letter "a" is converted to "ai"
+    The letter "o" is converted to "ober"
+    The letter "u" is converted to "ufat".
         
-Requisitos:
+Requirements:
 
-    *Debe funcionar solo con letras minúsculas
-    *No deben ser utilizados letras con acentos ni caracteres especiales
-    *Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+    It must work only with lowercase letters
+    Accented letters and special characters should not be used
+    It must be possible to convert a word to its encrypted version and also decrypt an encrypted word back to its original version.
   
-Disfrutar!
+Enjoy! 😜
