@@ -2,7 +2,7 @@
 🔓 Challenge ONE Sprint 01: Building a text encryptor with JavaScript – Encrypting your messages quickly and efficiently! 🔒
 
 <div align="center">
-    <img src="./img/insignia_encriptador.png">
+    <img src="./img/insignia_encriptador.png" width="100px" height="100px">
 </div>
 
 Welcome to the Text Encryptor 💻.
